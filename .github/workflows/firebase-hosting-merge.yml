@@ -17,3 +17,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEKRETA_3A4B4 }}
           channelId: live
           projectId: wekreta-3a4b4
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

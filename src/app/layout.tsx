@@ -16,7 +16,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" />
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" ></script>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
 }
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//   apiKey: "AIzaSyC9vtjhx3D0iQ8pJ9PbbZROXPHzI5zCRbo",
+//   authDomain: "krenai-webapp.firebaseapp.com",
+//   databaseURL: "https://krenai-webapp.firebaseio.com",
+//   projectId: "krenai-webapp",
+//   storageBucket: "krenai-webapp.appspot.com",
+//   messagingSenderId: "382818658961",
+//   appId: "1:382818658961:web:208f838ab191e49fcf6d30",
+//   measurementId: "G-W3XNT9XE33"
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);

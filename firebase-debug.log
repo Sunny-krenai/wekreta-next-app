@@ -1,0 +1,61 @@
+[debug] [2024-05-01T09:16:01.236Z] ----------------------------------------------------------------------
+[debug] [2024-05-01T09:16:01.238Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-05-01T09:16:01.239Z] CLI Version:   13.7.5
+[debug] [2024-05-01T09:16:01.239Z] Platform:      darwin
+[debug] [2024-05-01T09:16:01.239Z] Node Version:  v18.20.2
+[debug] [2024-05-01T09:16:01.240Z] Time:          Wed May 01 2024 14:46:01 GMT+0530 (India Standard Time)
+[debug] [2024-05-01T09:16:01.241Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-01T09:16:01.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-01T09:16:01.300Z] > authorizing via signed-in user (sunny@krenai.com)
+[debug] [2024-05-01T09:16:01.300Z] [iam] checking project wekreta-3a4b4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-01T09:16:01.302Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wekreta-3a4b4:testIamPermissions [none]
+[debug] [2024-05-01T09:16:01.302Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wekreta-3a4b4:testIamPermissions x-goog-quota-user=projects/wekreta-3a4b4
+[debug] [2024-05-01T09:16:01.302Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wekreta-3a4b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-01T09:16:03.088Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wekreta-3a4b4:testIamPermissions 200
+[debug] [2024-05-01T09:16:03.088Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wekreta-3a4b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-01T09:16:03.090Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wekreta-3a4b4 [none]
+[debug] [2024-05-01T09:16:03.696Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wekreta-3a4b4 200
+[debug] [2024-05-01T09:16:03.696Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wekreta-3a4b4 {"projectId":"wekreta-3a4b4","projectNumber":"730488593320","displayName":"wekreta","name":"projects/wekreta-3a4b4","resources":{"hostingSite":"wekreta-3a4b4"},"state":"ACTIVE","etag":"1_11ab0133-785d-411c-aa6c-c9dab4bee25e"}
+[debug] [2024-05-01T09:16:05.868Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites pageToken=&pageSize=10
+[debug] [2024-05-01T09:16:07.120Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites 200
+[debug] [2024-05-01T09:16:07.120Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites {"sites":[{"name":"projects/wekreta-3a4b4/sites/wekreta-3a4b4","defaultUrl":"https://wekreta-3a4b4.web.app","appId":"1:730488593320:web:fa66df526cf42a16289b9d","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-01T09:16:07.121Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730488593320:web:fa66df526cf42a16289b9d/config [none]
+[debug] [2024-05-01T09:16:08.135Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730488593320:web:fa66df526cf42a16289b9d/config 200
+[debug] [2024-05-01T09:16:08.136Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:730488593320:web:fa66df526cf42a16289b9d/config {"projectId":"wekreta-3a4b4","appId":"1:730488593320:web:fa66df526cf42a16289b9d","storageBucket":"wekreta-3a4b4.appspot.com","apiKey":"AIzaSyC8NBEAsI9oRSy0-yljtEtpYUeBPjHd_KY","authDomain":"wekreta-3a4b4.firebaseapp.com","messagingSenderId":"730488593320"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-01T09:16:13.513Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites/wekreta-3a4b4 [none]
+[debug] [2024-05-01T09:16:14.754Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites/wekreta-3a4b4 200
+[debug] [2024-05-01T09:16:14.755Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wekreta-3a4b4/sites/wekreta-3a4b4 {"name":"projects/wekreta-3a4b4/sites/wekreta-3a4b4","defaultUrl":"https://wekreta-3a4b4.web.app","appId":"1:730488593320:web:fa66df526cf42a16289b9d","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+./src/app/layout.tsx
+21:7  Error: Synchronous scripts should not be used. See: https://nextjs.org/docs/messages/no-sync-scripts  @next/next/no-sync-scripts
+22:1  Error: Synchronous scripts should not be used. See: https://nextjs.org/docs/messages/no-sync-scripts  @next/next/no-sync-scripts
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-05-01T09:16:38.299Z] Error: ENOENT: no such file or directory, open '/Users/krenai/Documents/Krenai-Admin/NextJs/wekreta-customer-app/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

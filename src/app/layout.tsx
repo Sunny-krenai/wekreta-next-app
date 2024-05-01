@@ -20,25 +20,3 @@ export default function RootLayout({
     </html>
   );
 }
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyC9vtjhx3D0iQ8pJ9PbbZROXPHzI5zCRbo",
-//   authDomain: "krenai-webapp.firebaseapp.com",
-//   databaseURL: "https://krenai-webapp.firebaseio.com",
-//   projectId: "krenai-webapp",
-//   storageBucket: "krenai-webapp.appspot.com",
-//   messagingSenderId: "382818658961",
-//   appId: "1:382818658961:web:208f838ab191e49fcf6d30",
-//   measurementId: "G-W3XNT9XE33"
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);

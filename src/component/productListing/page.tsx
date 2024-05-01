@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {Button} from "@nextui-org/button";
-import { Product } from "../models/Product";
+import { Product } from "../../models/Product";
+import style from "./productListing.module.css";
 
 const ProductGrid = async() => {
     const res = await fetch(
@@ -13,7 +13,7 @@ const ProductGrid = async() => {
 
   return (
     <div className="products-row row product-grid-4">
-      {products.map((tempProduct:Product, index:number) => (
+      {products.map((tempProduct:Product) => (
         <div className="col-lg-2 col-md-4 px-2 pb-3" key={tempProduct.id}>
           <div className="feat-product-block" >
 
@@ -29,8 +29,8 @@ const ProductGrid = async() => {
 
 
                 <div>
-                    <Button className="feat-towishlist" >
-                      <i className="bi bi-heart"></i></Button>
+                    <button className="feat-towishlist" >
+                      <i className="bi bi-heart"></i></button>
                 </div>
             </div>
 
@@ -74,9 +74,9 @@ const ProductGrid = async() => {
                         ₹{`${tempProduct.variants[0].sellingPrice}`}
                     </p>
 
-                    <Button className="feat-addcart-btn" >
+                    <button className="feat-addcart-btn" >
                         <span><i className="bi bi-cart2"></i>Add</span>
-                    </Button>
+                    </button>
                     
                 </div>
                 {/* <p className="font-xsm text-danger"

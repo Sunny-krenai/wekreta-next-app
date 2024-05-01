@@ -4,8 +4,8 @@ import { Product } from "../models/Product";
 
 const ProductGrid = async() => {
     const res = await fetch(
-        `https://storestaging.krenai.in/api/v4/product/customer?id=0&secondaryKey=&productName=&categoryName=&subCategoryName=&subSubCategoryName=&brandName=&isFeatured=0&search=&currentPage=1&itemsPerPage=80&sortBy=createdDate&sortOrder=desc&isFetchListing=0&searchTag=&accessKey=c7c11d33-c0f0-11ee-8f56-02feba6da81d`
-        ,{next:{revalidate:10}});
+        `https://storestaging.krenai.in/api/v4/product/customer?id=0&secondaryKey=&productName=&categoryName=&subCategoryName=&subSubCategoryName=&brandName=&isFeatured=0&search=&currentPage=1&itemsPerPage=80&sortBy=createdDate&sortOrder=desc&isFetchListing=0&searchTag=pen&accessKey=c7c11d33-c0f0-11ee-8f56-02feba6da81d`
+        ,{next:{revalidate:5}});
       const data = await res.json();
       
       const products: Product[]= data.object;

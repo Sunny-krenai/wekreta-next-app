@@ -65,7 +65,7 @@ const Dashboard = async () => {
     const catWiseProductdata = await catWiseProductRes.json();
     // const catWiseProducts: CategoryWiseProducts[] = catWiseProductdata.object;
 
-    let map:Map<string,{products:Product[],totalItems:number}> = new Map(Object.entries(catWiseProductdata));
+    let map:Map<string,{products:Product[],totalItems:number}> = new Map(Object.entries(catWiseProductdata.object));
 
 
     return (
@@ -79,7 +79,7 @@ const Dashboard = async () => {
                 <ProductGrid products={topRatedProducts} sectionName="Top Rated Products" />
                 <ProductGrid products={recentlyAddedProducts} sectionName="Recently Added Products" />
                 <ProductGrid products={dodProducts} sectionName="Deals Of The Day" />
-                {/* <CategoryWiseProdictSection data={map}/> */}
+                <CategoryWiseProdictSection data={map}/>
             </div>
         </main>
     );

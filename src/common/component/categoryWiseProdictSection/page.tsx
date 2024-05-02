@@ -4,14 +4,18 @@ import { Product } from "@/models/Product";
 
 const CategoryWiseProdictSection=(props:{data:Map<string,{products:Product[],totalItems:number}>})=> {
 
-    const keysOfMap = props.data.keys();
-    // let arrays = [...keysOfMap];
+    let map:Map<string,{products:Product[],totalItems:number}> = props.data;
+    const keysOfMap = map.keys();
+    let arrays = Array.from(keysOfMap);
+
 
     return (
         <div>
-            {/* {props.data.map((catWiseProducts: CategoryWiseProducts) => (
-                <ProductGrid products={catWiseProducts.data.products} sectionName={catWiseProducts.categoryName} />
-            ))}; */}
+            {arrays.map((key: string) => (
+                (map.get(key)!==undefined && (
+                    <ProductGrid key={key} products={map.get(key)?.products} sectionName={key} />
+                ))
+            ))}
         </div>
     );
 }

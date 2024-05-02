@@ -1,0 +1,168 @@
+.section-titile h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #253d4e;
+}
+
+.section-titile a {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3bb77e;
+    padding-top: 2px;
+}
+
+.categoryDragcardtitle h4 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #253d4e;
+    margin-bottom: 5px !important;
+    margin-top: 0px;
+
+}
+
+.categoryDragcardtitle span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #adadad;
+}
+
+/* Display category name on the image */
+
+.catNameOnImage .categoryDragcardtitle {
+    position: absolute;
+    top: 0;
+    border-top: none !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffffc9;
+    /* border-radius: 10px; */
+}
+
+.catNameOnImage .categoryDragcardtitle h4 {
+    padding: 4px 2px;
+    border-radius: 4px;
+    margin-top: 0px !important;
+}
+
+.catNameOnImage .categoryDragcardimage {
+    height: 100% !important;
+}
+
+.catNameOnImage .categoryDragcardtitle span {
+    color: #253d4e !important;
+}
+
+/* end Display category name on the image */
+
+/* Display category name on image hover  */
+
+.dispalyNameOnHover .categoryDragcardtitle {
+    position: absolute;
+    top: 0;
+    border-top: none !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s linear;
+    opacity: 0;
+    background-color: #ffffffc9;
+    border-radius: 10px;
+}
+
+.dispalyNameOnHover .categoryDragcardtitle h4 {
+    padding: 4px 2px;
+    border-radius: 4px;
+    margin-top: 0px !important;
+}
+
+.dispalyNameOnHover .categoryDragcardimage {
+    height: 100% !important;
+}
+
+.dispalyNameOnHover:hover .categoryDragcardtitle {
+    opacity: 1;
+}
+
+.dispalyNameOnHover .categoryDragcardtitle span {
+    color: #253d4e !important;
+}
+
+/* End Display category name on image hover  */
+
+.hideCateImage .categoryDragcardimage img {
+    display: none;
+}
+
+/* Hide category images */
+
+.hideCateImage .categoryDragcardtitle {
+    position: absolute;
+    top: 0;
+    border-top: none !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideCateImage .categoryDragcardtitle h6 {
+    padding: 4px 2px;
+    border-radius: 4px;
+    -webkit-line-clamp: 2;
+}
+
+/* .hideCateImage {
+    height: 100px !important;
+  } */
+
+.hideCateImage .categoryDragcardtitle h4 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #253d4e;
+    margin-bottom: 5px;
+    margin-top: 0px !important;
+}
+
+.hideCateImage .categoryDragcardtitle span {
+    color: #253d4e !important;
+}
+
+/* End Hide category images */
+
+/* Hide Category Name */
+.hideCateName .categoryDragcardtitle {
+    display: none;
+}
+
+.hideCateName .categoryDragcardimage {
+    height: 100% !important;
+}
+
+/* Hide Category Name */
+
+.imageFitConatin .categoryDragcardimage img {
+    object-fit: contain !important;
+}
+
+.imageFitCover .categoryDragcardimage img {
+    object-fit: cover !important;
+    height: 100% !important;
+}

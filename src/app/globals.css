@@ -36,3 +36,157 @@ body {
 .main {
   padding-bottom: 30px;
 }
+
+/* Product Card Dynamic Classes */
+.aspectSquare .feat-product-img {
+  aspect-ratio: 1/1 !important;
+  height: unset !important;
+}
+.aspectLandscape .feat-product-img {
+  /* aspect-ratio: 12/8 !important; */
+  aspect-ratio: 1/0.6 !important;
+  height: unset !important;
+}
+.aspectPotrait .feat-product-img {
+  aspect-ratio: 1/1.3 !important;
+  height: unset !important;
+}
+
+.imagePreviewContain .feat-product-img img {
+  object-fit: contain !important;
+}
+.imagePreviewCover .feat-product-img img {
+  object-fit: cover !important;
+}
+
+.productCardLarge .col-lg-2 {
+  flex: 0 0 auto;
+  width: 33.3% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+
+.productCardMedium .col-lg-2 {
+  flex: 0 0 auto;
+  width: 25% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+.productCardSmall .col-lg-2 {
+  flex: 0 0 auto;
+  width: 20% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+
+.productListCardLarge .col-lg-2 {
+  flex: 0 0 auto;
+  width: 50% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+
+.productListCardMedium .col-lg-2 {
+  flex: 0 0 auto;
+  width: 33.3% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+.productListCardSmall .col-lg-2 {
+  flex: 0 0 auto;
+  width: 25% !important;
+  /* padding: 0px 0px 10px 10px !important; */
+}
+
+/* Product Align Center */
+
+.productContentCenter .feat-product-content .sku-id {
+  text-align: center;
+}
+.productContentCenter .feat-product-content .feat-category {
+  text-align: center;
+}
+.productContentCenter .feat-product-content .feat-title {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.productContentCenter .feat-product-content .feat-variants-div {
+  text-align: center;
+}
+
+/* Product Align left */
+.productContentLeft .feat-product-content .sku-id {
+  text-align: left;
+}
+.productContentLeft .feat-product-content .feat-category {
+  text-align: left;
+}
+.productContentLeft .feat-product-content .feat-title {
+  text-align: left;
+}
+.productContentLeft .feat-product-content .feat-variants-div {
+  text-align: left;
+}
+
+/* Product Align Right */
+
+.productContentRight .feat-product-content .sku-id {
+  text-align: right;
+}
+.productContentRight .feat-product-content .feat-category {
+  text-align: right;
+}
+.productContentRight .feat-product-content .feat-title {
+  text-align: right;
+  width: 90%;
+  margin-left: auto;
+}
+.productContentRight .feat-product-content .feat-variants-div {
+  text-align: right;
+}
+
+.productContentJustify .feat-product-content .sku-id {
+  text-align: left;
+}
+
+.productContentJustify .feat-product-content .feat-category {
+  text-align: left;
+}
+.productContentJustify .feat-product-content .feat-title {
+  text-align: left;
+}
+.productContentJustify .productListCardinfo .productListAction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.productContentJustify .feat-bottom > .d-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.productContentJustify .feat-bottom p.feat-addcart-btn {
+  padding: 6px 15px 6px 0;
+}
+
+/* Product Card Dynamic Classes */
+
+/* product img contain cover css classes  */
+
+.imageFitConatin .feat-product-img img {
+  object-fit: contain !important;
+  height: 100% !important;
+}
+.imageFitCover .feat-product-img img {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
+.imageFitConatin .categoryDragcardimage img {
+  object-fit: contain !important;
+}
+.imageFitCover .categoryDragcardimage img {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
+/* end product img contain cover css classes  */
